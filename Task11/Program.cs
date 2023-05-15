@@ -10,7 +10,7 @@
 int number = new Random().Next(100, 1000); // (100, 999+1)
 Console.WriteLine($"Случайное число из отрезка 100 - 999 -> {number}");
 
-int Binary (int num)
+int DeleteSecodDigit (int num)
 {
     int firstDigit = num / 100;
     int thirdDirit = num % 10;
@@ -18,5 +18,5 @@ int Binary (int num)
     return needDigit;
 }
 
-int result = Binary(number);
+int result = DeleteSecodDigit(number);
 Console.WriteLine($"{number} -> {result}");
